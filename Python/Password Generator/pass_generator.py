@@ -37,3 +37,10 @@ no_of_passwords = 10
 for i in range(no_of_passwords):
     password = "".join(random.sample(all_chars, pass_length))
     print(password)
+
+Rp (7.000.000)
+
+Cicilan:
+
+4,5 Bulan        2 Bulan
+Rp1.500.000      Rp3.500.000
