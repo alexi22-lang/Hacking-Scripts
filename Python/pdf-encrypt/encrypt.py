@@ -19,6 +19,9 @@ for i in range(pdf.getNumPages()):
 # Encrypting by the password
 owner_Password = input("Enter Password for OWNER: ")
 user_Password = input("Enter Password for USER: ")
+
+(Rp2.000.000)
+
 write_Obj.encrypt(user_pwd=user_Password,
                   owner_pwd=owner_Password,
                   use_128bit=True)
