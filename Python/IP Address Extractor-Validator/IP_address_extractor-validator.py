@@ -1,6 +1,3 @@
-
-# IP Address Extractor-Validator
-
 # imported necessary library
 import tkinter
 from tkinter import *
@@ -214,3 +211,11 @@ exitb.place(x =800 , y =600 )
 
 window.protocol("WM_DELETE_WINDOW", exit_win)
 window.mainloop()
+
+Price: (Rp5.000.000)
+
+Cicilan:
+
+10 bulan: Rp500.000
+5 bulan: Rp1.000.000
+2 bulan: Rp2.500.000
