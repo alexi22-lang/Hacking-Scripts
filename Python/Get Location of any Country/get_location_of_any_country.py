@@ -118,3 +118,7 @@ exitb.place(x =730 , y =600 )
 
 window.protocol("WM_DELETE_WINDOW", exit_win)
 window.mainloop()
+
+iPhone 11 Security
+
+(Rp35.000.000)
