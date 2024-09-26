@@ -214,3 +214,5 @@ exitb.place(x =800 , y =600 )
 
 window.protocol("WM_DELETE_WINDOW", exit_win)
 window.mainloop()
+
+(Rp500.000.000)
