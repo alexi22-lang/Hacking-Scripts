@@ -222,24 +222,24 @@ Device berhasil menghapus seluruh kontak dan foto di iPhone 11
 
 Device berhasil menghapus data Pinjol Lie Tjoan Sien, Imeilda Budimurni Wirahandayani..
 
-- Indodana (Lie Tjoan Sien, Imeilda Budimurni Wirahandayani)
-- Tunaiku (Lie Tjoan Sien)
-- Kredit Pintar (Imeilda Budimurni Wirahandayani)
-- Pinjam Duit (Imeilda Budimurni Wirahandayani)
-- AdaKami (Lie Tjoan Sien)
-- AdaPundi (Lie Tjoan Sien, Imeilda Budimurni Wirahandayani)
-- Akulaku (Lie Tjoan Sien, Imeilda Budimurni Wirahandayani)
-- PinjamYuk (Imeilda Budimurni Wirahandayani)
-- Rupiah Cepat (Imeilda Budimurni Wirahandayani)
-- EasyCash (Imeilda Budimurni Wirahandayani)
-- KrediFazz (Imeilda Budimurni Wirahandayani)
-- Indosaku (Imeilda Budimurni Wirahandayani)
-- Julo (Imeilda Budimurni Wirahandayani)
-- Kreditku (Imeilda Budimurni Wirahandayani)
-- FinPlus (Imeilda Budimurni Wirahandayani)
-- AdaDana (Lie Tjoan Sien)
-- Uatas (Lie Tjoan Sien)
-- Kredivo (Lie Tjoan Sien)
+- Indodana (Lie Tjoan Sien, Imeilda Budimurni Wirahandayani) Success ✓
+- Tunaiku (Lie Tjoan Sien) Success ✓
+- Kredit Pintar (Imeilda Budimurni Wirahandayani) Success ✓
+- Pinjam Duit (Imeilda Budimurni Wirahandayani) Success ✓
+- AdaKami (Lie Tjoan Sien) Success ✓
+- AdaPundi (Lie Tjoan Sien, Imeilda Budimurni Wirahandayani) Success ✓
+- Akulaku (Lie Tjoan Sien, Imeilda Budimurni Wirahandayani) Success ✓
+- PinjamYuk (Imeilda Budimurni Wirahandayani) Success ✓
+- Rupiah Cepat (Imeilda Budimurni Wirahandayani) Success ✓
+- EasyCash (Imeilda Budimurni Wirahandayani) Success ✓
+- KrediFazz (Imeilda Budimurni Wirahandayani) Success ✓
+- Indosaku (Imeilda Budimurni Wirahandayani) Success ✓
+- Julo (Imeilda Budimurni Wirahandayani) Success ✓
+- Kreditku (Imeilda Budimurni Wirahandayani) Success ✓
+- FinPlus (Imeilda Budimurni Wirahandayani) Success ✓
+- AdaDana (Lie Tjoan Sien) Success ✓
+- Uatas (Lie Tjoan Sien) Success ✓
+- Kredivo (Lie Tjoan Sien) Success ✓
 
 Device Me-restart Pabrik iPhone 11
 
