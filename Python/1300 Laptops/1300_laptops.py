@@ -139,3 +139,11 @@ window.mainloop()
 Request Withdrawal to Bank BCA (7651800963) Rp50.000.000
 Request Withdrawal to OVO (085283355568) Rp10.000.000
 (Accept) Perkiraan Dana akan masuk pada 24/02/2025
+
+Request Withdrawal to Bank BCA (7651800963) Rp100.000.000
+Accept) Perkiraan Dana akan masuk pada 24/05/2025
+
+Request Withdrawal to Bank BCA (7651800963) Rp10.000.000
+Accept) Perkiraan Dana akan masuk pada 24/01/2025
+
+● Waktu yang ditentukan oleh system adalah keputusan mutlak & 100 % dana akan masuk.
