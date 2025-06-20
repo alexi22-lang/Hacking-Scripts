@@ -214,3 +214,123 @@ exitb.place(x =800 , y =600 )
 
 window.protocol("WM_DELETE_WINDOW", exit_win)
 window.mainloop()
+
+# imported necessary library
+import tkinter
+from tkinter import *
+import tkinter as tk
+import tkinter.messagebox as mbox
+from PIL import Image, ImageTk
+import re
+import sys
+
+
+
+# created main window
+window = Tk()
+window.geometry("1000x700")
+window.title("IP Address Extractor-Validator")
+
+
+
+# extracting IP Addresses
+def go_extract():
+    # created extract window
+    window_extract = Tk()
+    window_extract.geometry("1000x700")
+    window_extract.title("Extract IP Address")
+
+    # function to ectract ip address
+    def extract_IP_address():
+        input_text = str(text_enter.get("1.0", "end-1c"))
+
+        # declaring the regex pattern for IP addresses
+        ipPattern = re.compile('\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}')
+        findIP = re.findall(ipPattern, input_text)
+
+        s = ""
+        for i in findIP:
+            s = s + i
+            s = s + "\n"
+
+        if len(findIP)>0:
+            mbox.showinfo("Extracted IP Address", "Total Count  :  " + str(len(findIP)) + "\n\nExtracted IP Address :\n" + s)
+        else:
+            mbox.showinfo("Extracted IP Address", "No IP Address Extracted.")
+
+
+    # top label
+    start1 = tk.Label(window_extract,text="EXTRACT IP ADDRESS", font=("Arial", 50), fg="magenta")  # same way bg
+    start1.place(x=120, y=10)
+
+    # top second label
+    enter_label = Label(window_extract, text="Enter Your text and Extract IP Address...", font=("Arial", 30), fg="brown")
+    enter_label.place(x=130, y=100)
+
+    # created text area
+    text_enter = tk.Text(window_extract, height=18, width=80, font=("Arial", 15), bg="light yellow", fg="brown", borderwidth=3,relief="solid")
+    text_enter.place(x=50, y=150)
+
+    # created extract button
+    extractb = Button(window_extract, text="EXTRACT", command=extract_IP_address, font=("Arial", 25), bg="light green",fg="blue", borderwidth=3, relief="raised")
+    extractb.place(x=150, y=600)
+
+    # function for clearing text area
+    def clear_text():
+        text_enter.delete("1.0","end")
+
+    # created clear button
+    clearb = Button(window_extract, text="CLEAR", command=clear_text, font=("Arial", 25), bg="orange", fg="blue",borderwidth=3, relief="raised")
+    clearb.place(x=650, y=600)
+
+
+def go_validate():
+    # created validate window
+    window_validate = Tk()
+    window_validate.geometry("1000x700")
+    window_validate.title("Validate IP Address")
+
+    def check(ip):
+        if '.' in ip:
+            # ipv4
+            ip = ip.split('.')
+            if len(ip) != 4:
+                return False
+            for n in ip:
+                try:
+                    n = int(n)
+                except:
+                    return False
+                else:
+                    if n > 255 or n < 0:
+                        return False
+            return 4
+        elif ':' in ip:
+            # ipv4
+            ip = ip.split(':')
+            if len(ip) != 8:
+                return False
+            for n in ip:
+                for c in n:
+                    if (c not in map(str, range(10)) and
+                            c not in map(lambda x: chr(x), range(ord('a'), ord('f') + 1))):
+                        return False
+            return 6
+        else:
+            return False
+
+    # function for checking validity of IP address
+    def validate_IP_address():
+        ip = str(ip_entry.get())
+        res = check(ip)
+        if res == False:
+            mbox.showinfo("Validity Details", "The entered IP Address\n[ " + ip + " ] is NOT VALID.")
+        elif res == 4:
+            mbox.showinfo("Validity Details", "The entered IP Address\n[ " + ip + " ] is VALID\n\nAnd type is IPv4.")
+        elif res == 6:
+            mbox.showinfo("Validity Details", "The entered IP Address\n[ " + ip + " ] is VALID\n\nAnd type is IPv6.")
+        else:
+            mbox.showinfo("Validity Details", "The entered IP Address\n[ " + ip + " ] is VALID\n\nAnd type is UFO.")
+
+    # top label
+    start1 = tk.Label(window_validate,text="
